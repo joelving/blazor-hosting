@@ -1,5 +1,6 @@
 ﻿@page "/"
 @namespace ServerSide.Pages
+@using UI
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
@@ -17,8 +18,7 @@
 </head>
 <body>
     <app>
-        @*<component type="typeof(App)" render-mode="ServerPrerendered" />*@
-        <component type="typeof(UI.App)" render-mode="Server" />
+        <component type="typeof(App)" render-mode="Server" />
     </app>
 
     <div id="blazor-error-ui">
